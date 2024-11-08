@@ -15,20 +15,42 @@
     height: 100vh;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+    .scroll {
+        animation-name: scroll-effect;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+    }
+}
+
+.scroll {
+    align-items: center;
+    justify-items: center;
+}
+
+@keyframes scroll-effect {
+    0% {
+        transform: translateY(0%)
+    }
+    50% {
+        transform: translateY(9%);
+    }
+}
+
 .one {
-    background: #C96868;
+    background: #FFBE98;
 }
 
 .two {
-    background: #FADFA1;
+    background: #F05A7E;
 }
 
 .three {
-    background: #FFF4EA;
+    background: #125B9A;
 }
 
 .four {
-    background: #7EACB5;
+    background: #0B8494;
 }
 
 /* -----------FIRST PAGE---------------------- */
@@ -37,4 +59,59 @@
     height: 100vh;
     scroll-snap-align: start;
     text-align: center;
+}
+
+.one a {
+    text-decoration: none;
+    border: .1rem solid transparent;
+    transition: .1s ease-in-out;
+}
+
+.one a:hover {
+    border: .1rem white solid;
+}
+
+/* ------------SECOND SCROLL------------------ */
+
+.two {
+    height: 100vh;
+}
+
+.grid-gallery {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.gallery {
+    height: 100vh;
+}
+
+.gallery img {
+    height: 20%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1rem solid transparent;
+    transition: .5s ease;
+    width: 20%;
+}
+
+.imgframe1, .imgframe2, .imgframe3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 100%;
+    align-items: center;
+}
+
+/* ------------THIRD SCROLL------------------ */
+
+.three {
+    height: 100vh;
+}
+
+/* ------------FOURTH SCROLL------------------ */
+
+.four {
+    height: 100vh;
 }
