@@ -46,9 +46,18 @@
     transition: .1s ease-in-out;
 }
 
+.one p {
+    display: inline-block;
+    min-height: 30%;
+}
+
 .one a:hover {
     border: .1rem #125B9A solid;
     background: #125B9A;
+}
+
+.cta h1 {
+    font-size: 3rem;
 }
 
 .shape {
