@@ -38,26 +38,56 @@
     height: 100vh;
     scroll-snap-align: start;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
 }
 
 .one a {
-    text-decoration: none;
+    
     border: .1rem solid transparent;
     transition: .1s ease-in-out;
+    text-decoration: none;
 }
 
-.one p {
-    display: inline-block;
-    min-height: 30%;
+.nav-links {
+    display: flex;
+    gap: 6rem;
+    position: absolute;
+    top: 0rem;
+    background-color: #FFBE98;
+    width: 33%;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.nav {
+    flex: 1;
+    height: 3rem;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    text-align: center;
+}
+
+.nav a {
+    width: 100%;
+    display: block;
+    border: .1rem solid transparent;
 }
 
 .one a:hover {
-    border: .1rem #125B9A solid;
+    border: .1rem solid transparent;
     background: #125B9A;
+    transition: background-color 0.3s ease;
 }
 
 .cta h1 {
     font-size: 3rem;
+    color: #F05A7E;
 }
 
 .shape {
@@ -77,10 +107,6 @@
     background: #F05A7E;
     height: 7rem;
     width: 7rem;
-}
-
-.not-useless {
-    cursor: pointer;
 }
 
 @media (prefers-reduced-motion: no-preference) {
