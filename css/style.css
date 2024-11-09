@@ -79,11 +79,21 @@
     width: 7rem;
 }
 
+.not-useless {
+    cursor: pointer;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .scroll {
         animation-name: scroll-effect;
         animation-duration: 1.5s;
         animation-iteration-count: infinite;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .scroll {
+        animation-play-state: running;
     }
 }
 

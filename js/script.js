@@ -11,3 +11,5 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.shape, .shape2, .shape3').forEach(element => {
     observer.observe(element);
 });
+
+
