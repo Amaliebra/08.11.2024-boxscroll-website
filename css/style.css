@@ -54,7 +54,7 @@
 .shape {
     background: #125B9A;
     height: 7rem;
-    width: 7rem;   
+    width: 7rem;  
 }
 
 .shape2 {
@@ -69,6 +69,7 @@
     height: 7rem;
     width: 7rem;
 }
+
 @media (prefers-reduced-motion: no-preference) {
     .scroll {
         animation-name: scroll-effect;
