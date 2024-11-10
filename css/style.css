@@ -172,7 +172,7 @@ html, body {
     object-fit: cover;
     cursor: pointer;
     border: .5rem solid transparent;
-    transition: .9s ease-in-out;
+    transition: .6s ease-in-out;
     width: 50%;
 }
 
