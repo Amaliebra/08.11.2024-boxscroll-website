@@ -9,10 +9,18 @@
 
 /* -----------BACKGROUND + SCROLL----------------- */
 
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .container {
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
     overflow-y: scroll;
     height: 100vh;
+    width: 100vw;
 }
 
 
@@ -35,7 +43,7 @@
 /* -----------FIRSTPAGE---------------------- */
 
 .one {
-    height: 100vh;
+    min-height: 100vh;
     scroll-snap-align: start;
     text-align: center;
     display: flex;
@@ -90,6 +98,10 @@
     color: #F05A7E;
 }
 
+.cta p {
+    padding-bottom: 5rem;
+}
+
 .shape {
     background: #125B9A;
     height: 7rem;
@@ -126,6 +138,7 @@
 .scroll {
     align-items: center;
     justify-items: center;
+    flex: 1;
 }
 
 @keyframes scroll-effect {
@@ -139,7 +152,7 @@
 /* ------------SECOND SCROLL------------------ */
 
 .two {
-    height: 100vh;
+    min-height: 100vh;
     scroll-snap-align: start;
 }
 
@@ -179,7 +192,7 @@
 /* ------------THIRD SCROLL------------------ */
 
 .three {
-    height: 100vh;
+    min-height: 100vh;
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
@@ -189,9 +202,13 @@
 .heading {
     justify-content: center;
     display: flex;
-    font-size: 1.8rem;
+    font-size: 2rem;
     align-items: center;
     flex: 3;
+}
+
+.heading h1 {
+    background: #F05A7E;
 }
 
 .page-3 {
@@ -213,6 +230,47 @@
 /* ------------FOURTH SCROLL------------------ */
 
 .four {
-    height: 100vh;
+    min-height: 100vh;
     scroll-snap-align: start;
+    width: 100%;
+}
+
+.outer-wrapper {
+    width: 20rem;
+}
+
+.list-gallery{
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+.list-gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-gallery li {
+    height: 40vh;
+    flex-grow: 1;
+    list-style: none;
+}
+
+.list-gallery li:last-child{
+    flex-grow: 0;
+}
+.list-gallery img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+
+
+.wrapper1 {
+    flex-direction: row;
 }
