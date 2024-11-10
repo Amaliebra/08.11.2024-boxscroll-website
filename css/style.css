@@ -149,15 +149,22 @@
 
 .gallery {
     height: 100vh;
+    width: 100%;
+    display: flex;
+
 }
 
 .gallery img {
-    height: 20%;
+    height: 23%;
     object-fit: cover;
     cursor: pointer;
-    border: 1rem solid transparent;
-    transition: .5s ease;
-    width: 20%;
+    border: .5rem solid transparent;
+    transition: .9s ease-in-out;
+    width: 50%;
+}
+
+.gallery img:hover {
+    border: .5rem solid #125B9A;
 }
 
 .imgframe1, .imgframe2, .imgframe3{
@@ -174,8 +181,35 @@
 .three {
     height: 100vh;
     scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
 }
 
+.heading {
+    justify-content: center;
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    flex: 3;
+}
+
+.page-3 {
+    justify-content: space-evenly;
+    display: flex;
+    flex: 2;
+    align-items: center;
+    height: 30%;
+    border-top: 0.5rem solid #0B8494;
+}
+
+.text-box {
+    width: 30%;
+}
+
+.text-box1 {
+    width: 30%;
+}
 /* ------------FOURTH SCROLL------------------ */
 
 .four {
