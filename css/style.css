@@ -66,7 +66,7 @@ html, body {
     position: absolute;
     top: 0rem;
     background-color: #FFBE98;
-    width: 33%;
+    width: 23%;
     border-bottom-left-radius: 0.3rem;
     border-bottom-right-radius: 0.3rem;
     text-align: center;
@@ -75,7 +75,7 @@ html, body {
 
 .nav {
     flex: 1;
-    height: 3rem;
+    height: 2rem;
     border-bottom-left-radius: 0.3rem;
     border-bottom-right-radius: 0.3rem;
     text-align: center;
@@ -235,19 +235,11 @@ html, body {
     width: 100%;
 }
 
-.outer-wrapper {
-    width: 20rem;
-}
-
 .list-gallery{
     height: 80vh;
-    width: 90vw;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    
 }
-
-
 
 .list-gallery ul {
     display: flex;
@@ -258,6 +250,7 @@ html, body {
     height: 40vh;
     flex-grow: 1;
     list-style: none;
+    display: flex;
 }
 
 .list-gallery li:last-child{
@@ -269,7 +262,18 @@ html, body {
     object-fit: cover;
 }
 
+.outer-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    border-top: 1rem solid #F05A7E;
+}
 
+.wrapper2 {
+    color: #F05A7E;
+    font-size: 1.7rem;
+}
 
 .wrapper1 {
     flex-direction: row;
