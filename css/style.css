@@ -54,7 +54,8 @@ html, body {
 }
 
 .one a {
-    
+    justify-content: center;
+    align-content: center;
     border: .1rem solid transparent;
     transition: .1s ease-in-out;
     text-decoration: none;
@@ -66,10 +67,11 @@ html, body {
     position: absolute;
     top: 0rem;
     background-color: #FFBE98;
-    width: 23%;
+    width: 30%;
     border-bottom-left-radius: 0.3rem;
     border-bottom-right-radius: 0.3rem;
     text-align: center;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -79,6 +81,7 @@ html, body {
     border-bottom-left-radius: 0.3rem;
     border-bottom-right-radius: 0.3rem;
     text-align: center;
+    justify-self: center;
 }
 
 .nav a {
@@ -121,6 +124,54 @@ html, body {
     width: 7rem;
 }
 
+.shape3 p {
+    font-size: 0.35rem;
+}
+
+@media screen and (max-width: 1024px){
+    .shape, .shape2, .shape3{
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .shape3 p {
+        font-size: 0.25rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .shape, .shape2, .shape3{
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .shape3 p {
+        color: rgba(0, 0, 0, 0);
+    }
+
+    .one p {
+        font-size: 0.7rem;
+    }
+    .one h1 {
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        background: none;
+    }
+
+    .three h1 {
+        font-size: 2rem;
+    }
+
+    .three p {
+        font-size: 0.7rem;
+    }
+
+    .four p, i {
+        font-size: 0.7rem;
+    }
+}
 @media (prefers-reduced-motion: no-preference) {
     .scroll {
         animation-name: scroll-effect;
